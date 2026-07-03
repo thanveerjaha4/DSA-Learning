@@ -1,7 +1,7 @@
 
 ---
 
-# 📄 00-Fundamentals/Big-O-Notation.md
+#  00-Fundamentals/Big-O-Notation.md
 
 ```markdown id="d1d"
 # Big-O Notation
@@ -24,5 +24,5 @@ O(1) < O(n) < O(n²)
 
 ---
 
-## 🎯 Idea:
+##  Idea:
 Always choose faster approach
