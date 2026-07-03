@@ -2,7 +2,7 @@
 
 Welcome to my Data Structures and Algorithms learning repository.
 
-## 📚 About
+## About
 
 This repository contains my learning journey in Data Structures and Algorithms, including:
 - Theory notes
@@ -10,7 +10,7 @@ This repository contains my learning journey in Data Structures and Algorithms, 
 - Coding solutions
 - Time and Space Complexity analysis
 
-## 📂 Topics
+##  Topics
 
 - Fundamentals
 - Arrays
@@ -26,7 +26,7 @@ This repository contains my learning journey in Data Structures and Algorithms, 
 - Graphs
 - Dynamic Programming
 
-## 🎯 Goal
+##  Goal
 
 - Strengthen problem-solving skills
 - Build a strong DSA foundation
