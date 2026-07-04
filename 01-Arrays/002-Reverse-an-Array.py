@@ -1,5 +1,11 @@
 # Reverse an Array
 
+**Platform:** GeeksforGeeks (Basic Array Problem)
+
+**Problem Number:** N/A
+
+---
+
 ## Problem
 
 Given an array, reverse its elements.
@@ -20,13 +26,13 @@ Output:
 
 ## Approach
 
-We use two pointers:
+We use the Two Pointer technique.
 
 - One pointer starts from the beginning.
 - Another pointer starts from the end.
 - Swap both elements.
-- Move the left pointer forward and the right pointer backward.
-- Repeat until both pointers meet.
+- Move the pointers towards each other.
+- Continue until they meet.
 
 ---
 
@@ -34,8 +40,8 @@ We use two pointers:
 
 1. Initialize `left = 0` and `right = len(arr) - 1`.
 2. Swap `arr[left]` and `arr[right]`.
-3. Increment `left` and decrement `right`.
-4. Continue until `left >= right`.
+3. Move `left` forward and `right` backward.
+4. Repeat until `left >= right`.
 
 ---
 
@@ -61,18 +67,14 @@ class Solution:
 
 O(n)
 
-The array is traversed only once.
-
 ---
 
 ## Space Complexity
 
 O(1)
 
-No extra memory is used.
-
 ---
 
 ## Key Takeaway
 
-Two pointers help solve this problem efficiently without using an extra array.
+Two pointers allow us to reverse an array efficiently without using extra space.
