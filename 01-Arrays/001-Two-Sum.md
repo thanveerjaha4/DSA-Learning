@@ -1,52 +1,66 @@
 # Two Sum
 
+**Platform:** LeetCode
+
+**Problem Number:** 1
+
+---
+
 ## Problem
 
-Given an array of integers `nums` and an integer `target`, return the indices of the two numbers whose sum equals the target.
+Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to the target.
+
+You may assume that each input has exactly one solution, and you cannot use the same element twice.
 
 ---
 
 ## Example
 
-Input:
+**Input:**
 
+```text
 nums = [2, 7, 11, 15]
-
 target = 9
+```
 
-Output:
+**Output:**
 
+```text
 [0, 1]
+```
 
-Explanation:
+**Explanation:**
 
+```text
 nums[0] + nums[1] = 2 + 7 = 9
+```
 
 ---
 
-## Approach (Brute Force)
+## Approach 1: Brute Force
 
-The simplest way is to check every possible pair of numbers.
+The simplest way is to check every possible pair.
 
-- Take the first number and add it with every number after it.
-- If the sum equals the target, return their indices.
-- If not, continue checking until the pair is found.
+- Pick the first element.
+- Compare it with every remaining element.
+- If their sum equals the target, return their indices.
+- Otherwise, continue checking.
 
-This method is easy to understand but becomes slow for large arrays because it checks many unnecessary pairs.
+This approach is easy to understand but becomes slow for larger arrays because it checks many unnecessary pairs.
 
 ---
 
 ## Algorithm
 
-1. Start with the first element.
-2. Compare it with every remaining element.
-3. If their sum equals the target, return both indices.
-4. Otherwise, continue checking.
-5. Repeat until the answer is found.
+1. Traverse the array using the first loop.
+2. For each element, traverse the remaining elements using the second loop.
+3. Check if their sum equals the target.
+4. If yes, return the indices.
+5. Otherwise, continue until the answer is found.
 
 ---
 
-## Python Code
+## Python Code (Brute Force)
 
 ```python
 class Solution:
@@ -63,26 +77,82 @@ class Solution:
 
 ## Time Complexity
 
-O(n²)
+**O(n²)**
 
-Reason:
-Two nested loops are used to check every possible pair.
+Reason: Two nested loops are used.
 
 ---
 
 ## Space Complexity
 
-O(1)
+**O(1)**
 
-Reason:
-No extra data structure is used.
+Reason: No extra data structure is used.
+
+---
+
+## Approach 2: Optimized (Hash Map)
+
+Instead of checking every pair, store the numbers you've already seen in a dictionary.
+
+For each number:
+
+- Find the required value (`target - current number`).
+- Check if it already exists in the dictionary.
+- If yes, return both indices.
+- Otherwise, store the current number and continue.
+
+This avoids checking the same elements repeatedly.
+
+---
+
+## Algorithm
+
+1. Create an empty dictionary.
+2. Traverse the array.
+3. Calculate the required value.
+4. If it exists in the dictionary, return the answer.
+5. Otherwise, store the current number and its index.
+6. Continue until the pair is found.
+
+---
+
+## Python Code (Optimized)
+
+```python
+class Solution:
+    def twoSum(self, nums, target):
+        seen = {}
+
+        for i, num in enumerate(nums):
+            required = target - num
+
+            if required in seen:
+                return [seen[required], i]
+
+            seen[num] = i
+```
+
+---
+
+## Time Complexity
+
+**O(n)**
+
+Reason: The array is traversed only once.
+
+---
+
+## Space Complexity
+
+**O(n)**
+
+Reason: The dictionary stores previously visited elements.
 
 ---
 
 ## Key Takeaway
 
-This is the easiest approach to understand and is a good starting point.
-
-However, it checks many pairs repeatedly, making it inefficient for large inputs.
-
-In the next approach, we'll use a **Hash Map** to reduce the time complexity from **O(n²)** to **O(n)**.
+- The brute force approach is easy to understand but slow.
+- Using a **Hash Map (Dictionary)** allows us to find the required number in constant time.
+- This improves the time complexity from **O(n²)** to **O(n)**.
