@@ -1,22 +1,20 @@
 # Strings
 
-This folder contains notes and Python solutions related to Strings.
+This folder contains my notes and Python solutions related to String concepts and problems.
 
 ## Topics Covered
 
 - String Basics
-- Indexing
-- Slicing
-- Traversing Strings
-- String Methods
-- String Comparison
-- Character Operations
-- String Manipulation
+- String Traversal
+- Two Pointer on Strings
 
 ## Problems Solved
 
-- Valid Anagram (LeetCode 242)
-- Valid Palindrome (LeetCode 125)
-- Length of Last Word (LeetCode 58)
 - Reverse String (LeetCode 344)
-- Reverse Words in a String III (LeetCode 557)
+- Valid Palindrome (LeetCode 125)
+- Longest Common Prefix (LeetCode 14)
+- Valid Anagram (LeetCode 242)
+
+## Goal
+
+Build a strong understanding of string manipulation, traversal, and common interview problems.
