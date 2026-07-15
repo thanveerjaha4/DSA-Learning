@@ -13,7 +13,8 @@ This folder contains my notes and Python solutions related to String concepts an
 - Reverse String (LeetCode 344)
 - Valid Palindrome (LeetCode 125)
 - Longest Common Prefix (LeetCode 14)
-- Valid Anagram (LeetCode 242)
+- Legnth of Last Word (LeetCode 242)
+- - Roman to Integer (LeedCode )
 
 ## Goal
 
