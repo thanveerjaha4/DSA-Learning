@@ -20,9 +20,6 @@ The Two Pointer technique is a common DSA pattern used to solve array and string
 - Remove Element (LeetCode 27)
 - Move Zeroes (LeetCode 283)
 - Merge Sorted Array (LeetCode 88)
-- Squares of a Sorted Array (LeetCode 977)
-- Reverse String (LeetCode 344)
-- Valid Palindrome (LeetCode 125)
 
 ---
 
