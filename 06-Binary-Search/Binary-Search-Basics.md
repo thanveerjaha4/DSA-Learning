@@ -306,7 +306,7 @@ Binary Search is commonly used in:
 - Lower Bound and Upper Bound
 - Binary Search on Answer
 
----
+----
 
 ## Summary
 
