@@ -163,7 +163,7 @@ Reason:
 
 Recursive function calls are stored on the call stack.
 
----
+-----
 
 # Difference Between Iterative and Recursive Binary Search
 
@@ -175,7 +175,7 @@ Recursive function calls are stored on the call stack.
 | No recursion stack | Uses recursion stack |
 | Preferred in interviews | Easier to understand conceptually |
 
----
+-----
 
 # Which One Should You Use?
 
@@ -185,7 +185,7 @@ Recursive function calls are stored on the call stack.
 - Writing efficient code.
 - Memory usage is important.
 
----
+-----
 
 ### Use Recursive Binary Search when:
 
@@ -193,7 +193,7 @@ Recursive function calls are stored on the call stack.
 - Solving divide-and-conquer problems.
 - The recursive solution is easier to understand.
 
----
+-----
 
 # Summary
 
