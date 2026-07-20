@@ -7,13 +7,13 @@ Binary Search can be implemented in two ways:
 
 Both approaches follow the same logic but differ in how they repeatedly search the array.
 
----
+-----
 
 # 1. Iterative Binary Search
 
 In the iterative approach, we use a **while loop** to repeatedly divide the search space until the target is found or the search space becomes empty.
 
----
+-----
 
 ## How It Works
 
@@ -26,7 +26,7 @@ In the iterative approach, we use a **while loop** to repeatedly divide the sear
 5. Otherwise, move either the left or right pointer.
 6. Repeat until `left > right`.
 
----
+-----
 
 ## Code
 
@@ -59,7 +59,7 @@ def binarySearch(nums, target):
 - Uses constant memory.
 - Preferred in coding interviews.
 
----
+-----
 
 ## Disadvantages
 
@@ -73,7 +73,7 @@ def binarySearch(nums, target):
 O(log n)
 ```
 
----
+-----
 
 ## Space Complexity
 
@@ -81,7 +81,7 @@ O(log n)
 O(1)
 ```
 
----
+-----
 
 # 2. Recursive Binary Search
 
@@ -101,7 +101,7 @@ The search continues until the target is found or there are no elements left.
    - Or search the right half recursively.
 5. Stop when `left > right`.
 
----
+-----
 
 ## Code
 
@@ -129,7 +129,7 @@ Function Call:
 binarySearch(nums, 0, len(nums) - 1, target)
 ```
 
----
+-----
 
 ## Advantages
 
@@ -151,7 +151,7 @@ binarySearch(nums, 0, len(nums) - 1, target)
 O(log n)
 ```
 
----
+-----
 
 ## Space Complexity
 
